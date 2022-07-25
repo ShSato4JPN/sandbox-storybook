@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../../styles/LoginForm.css'
+import '../../../styles/LoginForm.scss'
 
 type Props = {
   title: string
@@ -9,7 +9,7 @@ const LoginForm: React.FC<Props> = (props) => {
   return (
     <div>
       <h1 className="title">{props.title}</h1>
-      <form className="flex flex-rows p-2 bg-red-500 text-white font-bold">
+      <form className="login-form">
         <input
           type="text"
           placeholder="email"
